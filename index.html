@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<title>Ami Coffee</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css"></s>
+
+</head>
+<body>
+<header class="header">
+<div id="menu-btn" class="fas fa-bars"></div><!--  categories -->
+ <a href="#" class="logo">Ami Coffee <i class="fas fa-mug-hot"></i></a>
+ <nav class="navbar">
+   <a href="#home">home</a>
+	 <a href="#about">about</a>
+	 <a href="#menu">menu</a>
+	 <a href="#review">review</a>
+	 <a href="#book">book</a>
+ </nav>
+ <a href="#" class="btn">book a table</a>
+</header>
+
+<section class="home" id="home">
+  <div class="row">
+	  <div class="content">
+		 <h3>fresh coffe in the morning</h3>
+		 <a href="#" class="btn">buy one now</a>
+		</div>
+		<div class="image">
+		 <img src="images/image.jpg" class="main-home-image" alt="">
+		</div>
+	</div>
+	<div class="image-slider">
+	  <img src="images/I1.jpg" alt="" style="width:150px;height:150px">
+		<img src="images/I3.jpg" alt="" style="width:150px;height:150px">
+		<img src="images/I2.jpg" alt="" style="width:150px;height:150px">
+	</div>
+</section>
+
+<section class="about" id="about">
+  <h1 class="heading">about as<span>why choose us</span></h1>
+	<div class="row">
+	  <div class="image">
+		   <img src="images/man.jpg" alt="" >
+		</div>
+		<div class="content">
+		   <h4 class="title">what's make our coffee special!</h4>
+			 <p>Lorem ipsum,dolor siit amet consectetur adipisicing elit.</p>
+			 <p>Esse et commodi,ad,doloremque . </p>
+			 <a href="#" class="btn">read more</a>
+			 <div class="icons-container">
+			    <div class="icons">
+					  <img src="images/coffeeb.jpg" style="width:50px;height:50px" alt="">
+						<h3>quality coffee</h3>
+					</div>
+					<div class="icons">
+					  <img src="images/coffees.jpg" style="width:50px;height:50px" alt="">
+						<h3>our branches</h3>
+					</div>
+					<div class="icons">
+					  <img src="images/coffeed.jpg" style="width:50px;height:50px" alt="">
+						<h3>free delivery</h3>
+					</div>
+			 </div>
+		</div>
+	</div>
+</section>
+
+<section class="menu" id="menu">
+  <h1 class="heading">our menu <span>popular menu</span></h1>
+	<div class="box-container">
+	   <a href="#" class="box">
+		    <img src="images/espresso cup.jpg" alt="" style="width:150px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Espresso</h3>
+					<span>$3</span>
+				</div>
+		 </a>
+		   <a href="#" class="box">
+		    <img src="images/americano.jpg" alt=""style="width:200px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Americano</h3>
+					<span>$4</span>
+				</div>
+		 </a>
+		   <a href="#" class="box">
+		    <img src="images/Cappuchino.jpg" alt="" style="width:100px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Latte</h3>
+					<span>$6</span>
+				</div>
+		 </a>
+		   <a href="#" class="box">
+		    <img src="images/cortado.jpg" alt="" style="width:150px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Cortado</h3>
+					<span>$5.5</span>
+				</div>
+		 </a>
+		   <a href="#" class="box">
+		    <img src="images/flatwhite.jpg" alt=""style="width:150px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Flat 
+					white</h3>
+					<span>$8.3</span>
+				</div>
+		 </a>
+		   <a href="#" class="box">
+		    <img src="images/irish.jpg" alt="" style="width:150px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Irish</h3>
+					<span>$6</span>
+				</div>
+		 </a>
+		 <a href="#" class="box">
+		    <img src="images/ristretto.jpg" alt="" style="width:150px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Ristretto</h3>
+					<span>$7</span>
+				</div>
+		 </a>
+		 <a href="#" class="box">
+		    <img src="images/dalgona.jpg" alt="" style="width:150px;height:150px">
+				<div class="content">
+				  <h3>our special coffee Dalgona</h3>
+					<span>$6</span>
+				</div>
+		 </a>
+	</div>
+</section>
+
+
+
+
+
+<script>
+  let menu=document.querySelector('#menu-btn');
+	let navbar=document.querySelector('.navbar');
+	menu.onclick = () =>{
+	  menu.classList.toggle('fa-times'); 
+		navbar.classList.toggle('active');  
+	}
+	window.onscroll = () =>{
+	  menu.classList.remove('fa-times'); 
+		navbar.classList.remove('active');  
+	};
+	 //   document.querySelector('.image-slider img').forEach(images=>(){
+	//      images.onclick=()=>{
+	//      var src=images.getAttribute('src');
+  //		   document.querySelector('.main-home-image').src = src;
+	  //   }
+	    // });
+	
+</script>
+
+</body>
+</html>
